@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>APEX BLUEPRINT | Free Fire Esports</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #080808;
+    color: white;
+}
+
+/* Navigation */
+nav {
+    background: #111;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ff5e00;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ff5e00;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #ff5e00;
+}
+
+/* Hero */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background:
+        linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)),
+        radial-gradient(circle, #252525, #050505);
+}
+
+.hero h1 {
+    font-size: 65px;
+    color: #ff5e00;
+    text-shadow: 0 0 25px #ff5e00;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #ddd;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #ff5e00;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background: #ff7b2b;
+}
+
+/* Sections */
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 38px;
+    color: #ff5e00;
+    margin-bottom: 35px;
+}
+
+/* Players */
+.players {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.player {
+    background: #151515;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    transition: .3s;
+}
+
+.player:hover {
+    transform: translateY(-8px);
+    border-color: #ff5e00;
+    box-shadow: 0 0 20px rgba(255,94,0,.4);
+}
+
+.player h3 {
+    color: #ff5e00;
+    margin-bottom: 10px;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.stat {
+    background: #151515;
+    padding: 30px 50px;
+    border-radius: 12px;
+}
+
+.stat h3 {
+    font-size: 35px;
+    color: #ff5e00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111;
+    border-top: 1px solid #333;
+    color: #aaa;
+}
+
+/* Mobile */
+@media(max-width:600px) {
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">APEX BLUEPRINT</div>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#team">Team</a>
+        <a href="#stats">Stats</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <div>
+        <h1>APEX BLUEPRINT</h1>
+
+        <p>FREE FIRE ESPORTS TEAM</p>
+
+        <p>
+            Dominate. Adapt. Conquer.
+        </p>
+
+        <a href="#team" class="btn">
+            VIEW OUR TEAM
+        </a>
+    </div>
+</div>
+
+<!-- TEAM -->
+<section id="team">
+
+    <h2>OUR SQUAD</h2>
+
+    <div class="players">
+
+        <div class="player">
+            <h3>PLAYER 01</h3>
+            <p>IGL / Rusher</p>
+            <p>APEX • Alpha</p>
+        </div>
+
+        <div class="player">
+            <h3>PLAYER 02</h3>
+            <p>Primary Rusher</p>
+            <p>APEX • Blaze</p>
+        </div>
+
+        <div class="player">
+            <h3>PLAYER 03</h3>
+            <p>Support</p>
+            <p>APEX • Ghost</p>
+        </div>
+
+        <div class="player">
+            <h3>PLAYER 04</h3>
+            <p>Sniper / AR</p>
+            <p>APEX • Hunter</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- STATS -->
+<section id="stats">
+
+    <h2>TEAM STATS</h2>
+
+    <div class="stats">
+
+        <div class="stat">
+            <h3>24</h3>
+            <p>Tournaments</p>
+        </div>
+
+        <div class="stat">
+            <h3>87</h3>
+            <p>Booyahs</p>
+        </div>
+
+        <div class="stat">
+            <h3>1250+</h3>
+            <p>Total Kills</p>
+        </div>
+
+        <div class="stat">
+            <h3>#1</h3>
+            <p>Our Goal</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+
+    <h2>JOIN APEX BLUEPRINT</h2>
+
+    <p>
+        Want to compete with us?
+    </p>
+
+    <a href="mailto:apexblueprint@example.com" class="btn">
+        CONTACT TEAM
+    </a>
+
+</section>
+
+<footer>
+    © 2026 APEX BLUEPRINT | Free Fire Esports
+</footer>
+
+</body>
+</html>
